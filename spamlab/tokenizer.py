@@ -21,4 +21,5 @@ def tokenize(text):
     return words
 
 
-print(tokenize("Visit www.bank-login.top now"))
+if __name__ == "__main__":
+    print(tokenize("Visit www.bank-login.top now"))
