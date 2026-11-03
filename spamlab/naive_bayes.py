@@ -54,3 +54,15 @@ if __name__ == "__main__":
     print(model.word_counts["spam"]["free"], model.word_counts["ham"]["free"])
     print(model.spam_probability("Claim your free prize now"))
     print(model.spam_probability("Please review the attached notes"))
+    print(model.spam_probability("free"))
+    print(model.spam_probability("free lunch tomorrow at the office"))
+    print(model.spam_probability("meeting notes attached, click here"))
+    print(model.spam_probability("zebra giraffe"))
+    print(model.spam_probability("adjunto el resultado final"))
+    print(model.spam_probability("hola, adjunto la agenda de manana"))
+    print(model.spam_probability("gana premio gratis ahora"))
+    print(model.spam_probability("el informe esta listo"))
+
+
+    text = "zebra giraffe lottery meeting"
+    print([w for w in tokenize(text) if w in model.vocab])
