@@ -62,7 +62,17 @@ if __name__ == "__main__":
     print(model.spam_probability("hola, adjunto la agenda de manana"))
     print(model.spam_probability("gana premio gratis ahora"))
     print(model.spam_probability("el informe esta listo"))
+    print(model.spam_probability("zebra giraffe lottery meeting"))
+    print(model.spam_probability("lottery"))
+    print(model.spam_probability("meeting"))
 
-
-    text = "zebra giraffe lottery meeting"
-    print([w for w in tokenize(text) if w in model.vocab])
+    tests = [
+        "lottery",
+        "meeting",
+        "zebra giraffe lottery meeting",
+        "hola, adjunto la agenda de manana",
+        "gana premio gratis ahora",
+        "el informe esta listo",
+    ]
+    for t in tests:
+        print(round(model.spam_probability(t), 3), "<-", t)
