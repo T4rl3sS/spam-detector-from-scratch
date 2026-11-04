@@ -66,6 +66,7 @@ if __name__ == "__main__":
     print(model.spam_probability("lottery"))
     print(model.spam_probability("meeting"))
 
+
     tests = [
         "lottery",
         "meeting",
@@ -73,6 +74,7 @@ if __name__ == "__main__":
         "hola, adjunto la agenda de manana",
         "gana premio gratis ahora",
         "el informe esta listo",
+        "el informe esta preparado",
     ]
     for t in tests:
         print(round(model.spam_probability(t), 3), "<-", t)
