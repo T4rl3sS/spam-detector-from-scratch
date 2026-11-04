@@ -1,7 +1,7 @@
 import re
 
 RISK = {"pass": 0.0, "neutral": 0.4, "none": 0.5, "softfail": 0.6, "fail": 1.0}
-WEIGHTS = {"dmarc": 0.45, "dkim": 0.30, "spf": 0.25}
+WEIGHTS = {"dmarc": 0.45, "dkim": 0.30, "spf": 0.25 ,"test": 0.009}
 
 
 def parse_auth(header):
