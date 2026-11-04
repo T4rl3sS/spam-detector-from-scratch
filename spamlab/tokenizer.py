@@ -2,7 +2,7 @@ import re
 
 STOP_WORDS = {"the", "a", "an", "and", "or", "to", "of", "in", "on",
               "for", "is", "are", "it", "this", "that", "with",
-              "you", "we", "my", "your"}
+              "you", "we", "my", "your","what"}
 
 URL_PATTERN = r"https?://\S+|www\.\S+"
 
