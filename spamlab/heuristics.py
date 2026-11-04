@@ -63,3 +63,4 @@ if __name__ == "__main__":
     print(mismatch_rule('<a href="https://mybank.com/login">www.mybank.com</a>'))
     print(rules_score("Verify your account", 'Act now: <a href="http://198.51.100.7/login">www.mybank.com</a>'))
     print(rules_score("Lunch", "See you tomorrow"))
+    print(rules_score("Break", "See you monday"))
