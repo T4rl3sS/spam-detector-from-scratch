@@ -7,6 +7,7 @@ from auth import auth_score
 WEIGHTS = {"content": 0.45, "rules": 0.30, "auth": 0.25}
 SPAM_THRESHOLD = 0.60
 REJECT_THRESHOLD = 0.85
+TEST = 0.0009
 
 
 def load_model():
